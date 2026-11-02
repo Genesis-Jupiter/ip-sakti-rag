@@ -1,0 +1,21 @@
+# secrets and local config
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# generated data (rebuild with: python ingest.py)
+data/chroma/
+data/escalations.jsonl
+data/feedback*.jsonl
+
+# source documents are not committed; see README "Add documents"
+data/raw/*
+!data/raw/.gitkeep
+data/later/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
